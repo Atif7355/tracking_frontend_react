@@ -7,7 +7,7 @@ import React, {useEffect} from 'react';
 
 function App() {
   useEffect(()=>{
-    axios.get('http://localhost:3000/getalluser')
+    axios.get('https://tracking-server-react.herokuapp.com/getalluser')
     .then(res=>{
       console.log(res);
     })

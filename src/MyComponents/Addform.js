@@ -20,7 +20,7 @@ export const Addform = () => {
     alert("These fields are required");
     }
     else{
-        axios.post("http://localhost:3000/newuser", { name:name,address:address,mobile:mobile,city:city,district:district,code:code,state:state,patient:patient,disease:disease,needs:needs,email:email,aemail:aemail})
+        axios.post("https://tracking-server-react.herokuapp.com/newuser", { name:name,address:address,mobile:mobile,city:city,district:district,code:code,state:state,patient:patient,disease:disease,needs:needs,email:email,aemail:aemail})
         .then(res => {
             console.log(res);
         })

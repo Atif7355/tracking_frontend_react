@@ -45,7 +45,7 @@
   transform:translate(350%,2%);
 }
 .form{
-  background-color:lightcyan;
+  background:rgba(135,140,180,125);
   height:1225px;
 }
 

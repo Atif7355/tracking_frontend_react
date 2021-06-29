@@ -23,6 +23,7 @@ export const Addform = () => {
         axios.post("https://tracking-server-react.herokuapp.com/newuser", { name:name,address:address,mobile:mobile,city:city,district:district,code:code,state:state,patient:patient,disease:disease,needs:needs,email:email,aemail:aemail})
         .then(res => {
             console.log(res);
+            alert("All details are submitted successfully");
         })
         .catch(err => {
             console.log(err);

@@ -46,6 +46,13 @@ export const Addform = () => {
         <div className="form">
               <form onSubmit={submit} id="dfrm"style={{padding:"50px"}}>
               <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Field</th>
+                            <th scope="col">Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
                     <tr>
                         <td style={{fontFamily:"Serif",fontSize:"30px"}}>
                             <label htmlfor="name"><b>Name:</b><span class="red">*</span></label>
@@ -191,7 +198,7 @@ export const Addform = () => {
                         <input type="email" id="aemail" value={aemail} onChange={(e)=>setAemail(e.target.value)} style={{width:"500px",height:"40px",borderRadius:"10px"}}/>
                         </td>
                     </tr>
-
+                    </tbody>
                 </table>
                 <br/>
                 <button type="submit" className="button">Submit</button>

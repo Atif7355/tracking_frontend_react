@@ -44,10 +44,6 @@ export const Addform = () => {
 }
     return (
         <div className="form">
-              <form onSubmit={submit} id="dfrm"style={{padding:"50px"}}>
-              <table>
-                    <thead>
-                        <tr>
                             <th scope="col">Field</th>
                             <th scope="col">Value</th>
                         </tr>
